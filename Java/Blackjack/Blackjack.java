@@ -101,32 +101,9 @@ public class Blackjack {
       }
     }
 
-    //Different Outcomes
+    //Declare Winner
     System.out.println("\n");
-    if (displayPoints_play > 21 && displayPoints_comp > 21) {
-      System.out.println("Both the computer and the player have a score greater than 21. Both lose.");
-    }
-    else if (displayPoints_play == 21) {
-      System.out.println("You got exactly 21 points! You win!");
-    }
-    else if (displayPoints_comp == 21){
-      System.out.println("The computer got exactly 21 points. You lost.");
-    }
-    else if (displayPoints_play > 21) {
-      System.out.println("\nYour score is above 21. You lost.");
-    }
-    else if (displayPoints_comp > 21) {
-      System.out.println("The computer's score is above 21. You win!");
-    }
-    else if (displayPoints_comp == displayPoints_play) {
-      System.out.println("The computer and the player have the same amount of points. It's a tie!");
-    }
-    else if (displayPoints_comp > displayPoints_play) {
-      System.out.println("The computer has more points. You lost.");
-    }
-    else {
-      System.out.println("You have more points than the computer. You win!");
-    }
+    player.findWinner(displayPoints_play, displayPoints_comp);
 
     //Game ended and another round can start
     System.out.print("Another round? (n for no and any other key for yes): ");
