@@ -1,0 +1,10 @@
+Clothing
+Hat
+Shirt
+Pants
+Scarf
+Jacket
+Sweater
+Socks
+Shoes
+Skirt
